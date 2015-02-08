@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="299.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <CheckBox fx:id="simplify" alignment="CENTER" layoutX="38.0" layoutY="46.0" mnemonicParsing="false" text="Просто ответь да или нет" textAlignment="CENTER">
+         <effect>
+            <Glow level="0.12" />
+         </effect>
+      </CheckBox>
+      <CheckBox fx:id="wait" alignment="CENTER" layoutX="38.0" layoutY="72.0" mnemonicParsing="false" text="Серьезно подумай над этим" textAlignment="CENTER">
+         <effect>
+            <Glow level="0.12" />
+         </effect>
+      </CheckBox>
+      <Button fx:id="Answer" layoutX="108.0" layoutY="97.0" mnemonicParsing="false" onAction="#Answer" prefHeight="28.0" prefWidth="84.0" text="Отвечай" />
+      <TextField fx:id="question" alignment="CENTER" layoutX="38.0" layoutY="14.0" prefHeight="26.0" prefWidth="224.0" text="Впиши вопрос" />
+      <Label fx:id="otvet" alignment="CENTER" layoutX="17.0" layoutY="139.0" prefHeight="28.0" prefWidth="264.0" textAlignment="CENTER">
+         <effect>
+            <Glow level="0.19" />
+         </effect></Label>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</Pane>
